@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f4eee6"><title>Noor — CRM & Marketing</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
+<body><div class="shell">
+<aside class="rail" id="rail"><div class="rail-logo">▣</div>
+<nav>
+<button class="rail-btn active" data-page="dashboard" title="Dashboard">▦</button>
+<button class="rail-btn" data-page="inbox" title="Inbox">▣<i class="badge-dot"></i></button>
+<button class="rail-btn" data-page="campaigns" title="Campaigns">➤</button>
+<button class="rail-btn" data-page="automations" title="Automations">ϟ</button>
+<button class="rail-btn" data-page="reports" title="Reports">▤</button>
+<button class="rail-btn" data-page="contacts" title="Contacts">♧</button>
+</nav><div class="rail-bottom"><button class="rail-btn" id="settingsBtn" title="Settings">⚙</button><button class="rail-btn" id="collapseBtn" title="Collapse">⇄</button></div>
+</aside>
+<main class="main">
+<header class="topbar"><div class="crumb" id="crumb">Workspace <span>/</span> Overview</div><div class="top-actions"><label class="search"><span>⌕</span><input id="globalSearch" placeholder="Search"><kbd>⌘ K</kbd></label><button class="sync" id="syncBtn">⟳ <span><b>Last sync</b><small>Just now</small></span></button><button class="user">NA</button></div></header>
+<div class="view" id="view"></div>
+</main></div>
+<div class="shade hidden" id="shade"></div><aside class="drawer hidden" id="drawer"><button class="close" id="drawerClose">×</button><div id="drawerContent"></div></aside>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script></body></html>
